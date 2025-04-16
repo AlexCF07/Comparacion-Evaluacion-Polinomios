@@ -68,28 +68,13 @@ El programa genera un archivo CSV con tres filas:
 3. Tiempos de evaluación tradicional (en ns)
 
 **Gráfica comparativa** 
-// imagen
+![Grafica-comparativa-d](https://github.com/user-attachments/assets/4a72c706-8856-4e09-ada6-3b9fd96c805c)
 
 ## 🔍 Análisis de Resultados
-
+- El método de Horner demostró ser mucho más eficiente que el método tradicional en la enorme mayoría de casos.
+- El único caso en el que el método tradicional demostró ser superior es en la evaluación de un polinomio grado 10, donde el método de Horner tardó 4500 nanosegundos, mientras que el tradicional tardó 1500.
+- La diferencia de velocidades se hace más notoria conforme aumenta el grado del polinomio.
 
 ## ✅ Conclusiones
-
-
-
-## 📝 Notas Adicionales
-
-### Windows:
-- Para mejor rendimiento, ejecutar en PowerShell o Git Bash
-- Puede requerir permisos de administrador para instalación
-
-### Linux:
-- Para monitorear recursos durante ejecución:
-  ```bash
-  top -d 1
-  ```
-- Para visualizar el CSV:
-  ```bash
-  libreoffice --calc Polinomios-Evaluacion.csv
-  ```
-
+- El método tradicional es más recomendable para polinomios de grado 10 o menor.
+- Para polinomios con grados superiores al 10, el método de Horner es mucho más eficiente.
